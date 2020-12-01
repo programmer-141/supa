@@ -1,0 +1,85 @@
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload{
+    width: 100%;
+    height: 100vh;
+    .label{
+        width: 100%;
+        height: 5rem;
+        @include flex();
+        font-size:25px;
+        letter-spacing: 1px;
+        font-weight: bolder;
+    }
+    .upload-btns{
+        width: 100%;
+        height: 20rem;
+        @include flex();
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        .btn-set{
+            @include flex();
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            margin: 0 40px;
+            .btn{
+                width: 4rem;
+                height: 4rem;
+                border: none;
+                border: 1px solid black;
+                border-radius: 50%;
+                margin-bottom: 10px;
+                background: transparent;
+                outline: none;
+                font-family: 'Poppins';
+                i{
+                    color: black;
+                    font-size: 20px;
+                }
+            }
+            .btn-label{
+                font-family: 'Poppins';
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.gallery{
+    width: 100%;
+    height: 82vh;
+    @include flex();
+    flex-direction: column;
+    overflow: hidden;
+    .up-image{
+        width: 90%;
+        height: 100%;
+        border: 1px solid black;
+        margin-top: 5vh;
+        border-radius: 5px;
+        @include flex();
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .custombtn{
+        width: 140px;
+        height: 40px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background: transparent;
+        border: .5px solid #000;
+        color: #000;
+        margin: 20px 0;
+    }
+}
