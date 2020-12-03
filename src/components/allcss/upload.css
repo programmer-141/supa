@@ -78,7 +78,7 @@
   margin-bottom: 10px;
   background: transparent;
   outline: none;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .upload .upload-btns .btn-set .btn i {
@@ -87,13 +87,13 @@
 }
 
 .upload .upload-btns .btn-set .btn-label {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 10px;
 }
 
-.gallery {
+.preview {
   width: 100%;
-  height: 82vh;
+  height: 663px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,15 +109,68 @@
           justify-content: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  overflow: hidden;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.gallery .up-image {
+.preview .preview-text {
+  margin: 20px 0;
+  width: 100%;
+  height: 19.89px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: capitalize;
+  padding: 20px;
+  text-align: center;
+}
+
+.preview .preview-text .text {
+  font-size: 17px;
+}
+
+.preview .post-content {
   width: 90%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.preview .post-content .input {
+  outline: none;
+  width: 100%;
   height: 100%;
-  border: 1px solid black;
-  margin-top: 5vh;
-  border-radius: 5px;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.preview .preview-img {
+  width: 90%;
+  height: 320px;
+  margin-top: 33.15px;
+  border-radius: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,20 +187,24 @@
   overflow: hidden;
 }
 
-.gallery .up-image img {
+.preview .preview-img img {
   width: 100%;
   height: 100%;
 }
 
-.gallery .custombtn {
+.preview .custombtn {
   width: 140px;
-  height: 40px;
+  height: 30px;
   border: none;
   outline: none;
-  border-radius: 5px;
   background: transparent;
-  border: .5px solid #000;
+  border-radius: 2px;
+  border: 0.5px solid black;
   color: #000;
-  margin: 20px 0;
+  margin: 20px 10px;
+}
+
+.preview .custombtn:active {
+  background: #f0f0f0;
 }
 /*# sourceMappingURL=upload.css.map */

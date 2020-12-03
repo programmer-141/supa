@@ -1,1 +1,185 @@
-/* No CSS *//*# sourceMappingURL=signup.css.map */
+.signup {
+  width: 100%;
+  height: 663px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000428), to(#004e92));
+  background: linear-gradient(to top, #000428, #004e92);
+}
+
+.signup .title {
+  width: 100%;
+  height: 93px;
+  color: white;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px auto;
+  font-size: 18px;
+}
+
+.signup .avatar {
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup .avatar .avatar-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: white 2px solid;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup .avatar .avatar-img::before {
+  content: "";
+  width: 140px;
+  height: 140px;
+  border: white 2px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+}
+
+.signup .avatar .avatar-img::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: white 2px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+}
+
+.signup .form {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup .form .input,
+.signup .form .pass {
+  width: 80%;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 2px;
+  margin: 10px auto;
+}
+
+.signup .form .label {
+  color: white;
+}
+
+.signup .form .sp {
+  width: 100%;
+  height: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  padding: 10px 0;
+  margin: 10px 0;
+  position: relative;
+}
+
+.signup .form .eye {
+  position: absolute;
+  bottom: 2px;
+  right: 40px;
+  top: 0;
+}
+
+.signup .form .eye .eye-box {
+  width: 25px;
+  height: 25px;
+}
+
+.signup .pass-req {
+  width: 100%;
+  height: 102px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.signup .pass-req .list {
+  margin-left: 60px;
+  font-size: 12px;
+}
+/*# sourceMappingURL=signup.css.map */

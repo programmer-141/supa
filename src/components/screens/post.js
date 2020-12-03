@@ -4,20 +4,20 @@ import '../allcss/home.css';
 
 function Post() {
     //background image styling
-    const postPic = "https://picsum.photos/500/500" ; 
+    const postPic = "https://picsum.photos/500/500";
     const bgStyle = {
         // background : `url("${postPic}")center no-repeat`,
         // backgroundSize :`100% 100%`,
         background: `#FFFAFA`,
     };
     return (
-        <div className="post-wrapper" style = {bgStyle}>
+        <div className="post-wrapper" style={bgStyle}>
             <div className="post-bg">
                 {/* <div className="blur" style={bgStyle}>  </div> */}
                 <div className="post">
                     <div className="user">
                         <div className="user-img-bg">
-                            <img className="user-img" src ={postPic}></img>
+                            <img className="user-img" src={postPic} alt=""></img>
                         </div>
                         <div className="adminDetails">
                             <div className="user-data"><p>Honey</p></div>
@@ -25,12 +25,14 @@ function Post() {
                         </div>
                     </div>
                     <div className="image-sec">
-                        <img className="image" src = {postPic} alt="" ></img>
+                        <div className="image-container">
+                            <img className="image" src={postPic} alt="" ></img>
+                        </div>
                     </div>
                     <div className="icons">
-                        <a href="#"><i className="fa fa-heart"></i></a>
-                        <a href="#"><i className="fa fa-comments"></i></a>
-                        <a href="#"><i className="fa fa-share"></i></a>
+                        <a href="www.google.com"><i className="fa fa-heart a"></i></a>
+                        <a href="www.google.com"><i className="fa fa-comments a"></i></a>
+                        <a href="www.google.com"><i className="fa fa-share a"></i></a>
                     </div>
                     <div className="like-count">
                         <p>491 Likes</p>
@@ -40,7 +42,7 @@ function Post() {
                     </div>
 
                     <div className="comments" id="comments">
-                        <p><a href="#">View all Comments</a></p>
+                        <p><a href="www.google.com">View all Comments</a></p>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ function Upload() {
             <p className="label">Create Post</p>
             <div className="upload-btns">
                 <div className="btn-set">
-                    <Link to="/gallery">
+                    <Link to="/preview">
                         <button className="btn">
                             <i className="fa fa-camera"></i>
                         </button>
