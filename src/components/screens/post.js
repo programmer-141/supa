@@ -4,23 +4,31 @@ import '../allcss/home.css';
 
 function Post() {
     //background image styling
-    const postPic = "https://picsum.photos/500/500";
+    const postPic = "https://picsum.photos/500/700";
     const bgStyle = {
-        // background : `url("${postPic}")center no-repeat`,
-        // backgroundSize :`100% 100%`,
-        background: `#FFFAFA`,
+        // background: `url("${postPic}")center no-repeat`,
+        // backgroundSize: `100% 100%`,
+        background: `#f3f3f5`,
     };
+
+
+
+
     return (
         <div className="post-wrapper" style={bgStyle}>
             <div className="post-bg">
-                {/* <div className="blur" style={bgStyle}>  </div> */}
+                <div className="blur" style={bgStyle}>  </div>
+                <div className="blur" style={bgStyle}>  </div>
+                <div className="blur" style={bgStyle}>  </div>
+                <div className="blur" style={bgStyle}>  </div>
+                <div className="blur" style={bgStyle}>  </div>
                 <div className="post">
                     <div className="user">
                         <div className="user-img-bg">
                             <img className="user-img" src={postPic} alt=""></img>
                         </div>
                         <div className="adminDetails">
-                            <div className="user-data"><p>Honey</p></div>
+                            <div className="user-data"><p id="bg">Honey</p></div>
                             <div className="user-data"><p>Sponcered</p></div>
                         </div>
                     </div>

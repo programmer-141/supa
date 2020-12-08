@@ -1,6 +1,7 @@
 .upload {
   width: 100%;
   height: 100vh;
+  background: linear-gradient(45deg, #bdc3c7, #2c3e50);
 }
 
 .upload .label {
@@ -22,6 +23,7 @@
   font-size: 25px;
   letter-spacing: 1px;
   font-weight: bolder;
+  color: white;
 }
 
 .upload .upload-btns {
@@ -46,6 +48,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 2rem;
+  color: white;
 }
 
 .upload .upload-btns .btn-set {
@@ -73,7 +76,7 @@
   width: 4rem;
   height: 4rem;
   border: none;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 50%;
   margin-bottom: 10px;
   background: transparent;
@@ -82,7 +85,7 @@
 }
 
 .upload .upload-btns .btn-set .btn i {
-  color: black;
+  color: white;
   font-size: 20px;
 }
 
@@ -163,6 +166,9 @@
   width: 100%;
   height: 100%;
   border-radius: 2px;
+  border: none;
+  border-bottom: 1px solid black;
+  background: none;
   padding: 5px;
 }
 

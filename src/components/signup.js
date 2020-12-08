@@ -2,41 +2,44 @@ import React from 'react';
 import '../components/allcss/signup.css';
 
 function Signup() {
-    function passToggle(){
-        var pass = document.querySelector('.pass');
-        if(pass.type === 'password' ){
+    function showPass() {
+        const pass = document.querySelector('.pass');
+        const eye = document.querySelector('#eye');
+        if (pass.type === 'password') {
             pass.type = "text";
-        }else {
+        } else {
             pass.type = "password";
         }
+        eye.classList.toggle('fa-eye-slash');
     }
     return (
-        <div className="signup">
-            <div className="title">
-                <p>Register and enter the world of memories and joyness.</p>
-            </div>
-            <div className="avatar">
-                <div className="avatar-img"></div>
-            </div>
-            <div className="form">
-                <label className="label">UserName</label>
-                <input className="input" type="text" placeholder="Enter a Unique username"></input>
-                <label className="label">Email</label>
-                <input className="input" type="email" placeholder="Enter your email"></input>
-                <label className="label">Password</label>
-                <div className="sp">
-                    <input className="pass" type="password" placeholder="Enter a Strong password"></input>
-                    <div className="eye">
-                        <input type="checkbox" onClick = {passToggle()} className="eye-box"></input>
+        <div>
+            <div className="signup">
+                <h1>SignUp</h1>
+                <div className="signup-box">
+                    <div className="input">
+                        <label className="lable">Username</label>
+                        <input type="text" className="inp"></input>
+                        <label className="lable">Email</label>
+                        <input type="email" className="inp"></input>
+                        <label className="lable">Password</label>
+                        <div className="inp-bg">
+                            <input type="password" className="pass"></input>
+                            <div className="eye">
+                                <i onClick={() => { showPass() }} id="eye" className="fa fa-eye"></i>
+                            </div>
+                        </div>
+                        <a href="#"><button className="btn">Signup</button></a>
                     </div>
                 </div>
+                <div className="a-user">
+                    <a href="#" className="link">Already a User?</a>
+                </div>
+                <div className="social-btn">
+                    <button className="btn-s"><i className="fa fa-google"></i></button>
+                    <button className="btn-s"><i className="fa fa-facebook-f"></i></button>
+                </div>
             </div>
-            {/* <ul className="pass-req">
-                <li className="list">One lowercase letter</li>
-                <li className="list">One uppercase letter</li>
-                <li className="list">One special character </li>
-                <li className="list">One number</li>
-            </ul> */}
         </div>
     );
 }

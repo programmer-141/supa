@@ -1,0 +1,95 @@
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-bg {
+    width: 100%;
+    height: 200vh;
+    background: #f3f3f5;
+    color: var(--text-color);
+    .menu-dots {
+        width: 100%;
+        height: 60px;
+        @include flex();
+        justify-content: flex-start;
+        position: relative;
+        .profile-name {
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        .menu {
+            position: absolute;
+            right: 0;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transform: rotate(90deg);
+        }
+    }
+    .avatar {
+        width: 100%;
+        height: 150px;
+        @include flex();
+        .profile-ring {
+            width: 105px;
+            height: 105px;
+            border-radius: 50%;
+            border-top: 3px solid var(--text-color);
+            animation: dp 1.5s linear infinite;
+            overflow: hidden;
+            @include flex();
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+    }
+    .follower-menu {
+        width: 100%;
+        height: 100px;
+        margin-top: 20px;
+        position: relative;
+        @include flex();
+        .following, .followers{
+            width: 50%;
+            height: 100%;
+            // background: blue;
+            @include flex();
+            flex-direction: column;
+        }
+        // .followers{
+        //     // background-color: grey;
+        // }
+    }
+    .follower-menu::before, .btn-menu::before{
+        content: "";
+        width: 95%;
+        height: 100%;
+        position: absolute;
+        border-top: 1px solid var(--text-color);
+        border-bottom: 1px solid var(--text-color);
+    }
+    .btn-menu {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        @include flex();
+    }
+    .btn-menu::before{
+        border-top: none;
+    }
+}
+
+@keyframes dp {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

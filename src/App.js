@@ -42,7 +42,7 @@ function App() {
       <Route path="/register">
         <Signup />
       </Route>
-      {/* <Navbar /> */}
+      <Navbar />
     </BrowserRouter>
   );
 }

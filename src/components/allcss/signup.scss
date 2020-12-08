@@ -1,104 +1,135 @@
+
+
 @mixin flex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
+
 .signup {
     width: 100%;
-    height: 663px;
-    background: linear-gradient(to top, #000428, #004e92);
-    .title {
-        width: 100%;
-        height: 93px;
+    height: 100vh;
+    background: linear-gradient(45deg, #bdc3c7, #2c3e50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
         color: white;
-        text-transform: capitalize;
-        // background-color: black;
-        @include flex();
-        text-align: center;
-        padding: 10px auto;
-        font-size: 18px;
+        margin: 10px auto;
     }
-    .avatar {
+    .signup-box {
         width: 100%;
-        height: 120px;
-        @include flex();
-        .avatar-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: white 2px solid;
-            position: relative;
-            overflow: hidden;
-            @include flex();
-        }
-        .avatar-img::before {
-            content: "";
-            width: 140px;
-            height: 140px;
-            border: white 2px solid;
-            border-radius: 50%;
-            position: absolute;
-            // background-color: rgb(167, 210, 250);
-            top: 60px;
-        }
-        .avatar-img::after {
-            content: "";
-            width: 40px;
-            height: 40px;
-            border: white 2px solid;
-            border-radius: 50%;
-            position: absolute;
-            // background-color: rgb(167, 210, 250);
-            top: 10px;
-        }
-    }
-    .form {
-        width: 100%;
-        height: 300px;
-        @include flex();
-        .input,
-        .pass {
-            width: 80%;
-            height: 30px;
-            border: none;
-            outline: none;
-            padding: 5px;
-            border-radius: 2px;
-            margin: 10px auto;
-        }
-        .label {
-            color: white;
-        }
-        .sp {
+        height: 100%;
+        .input {
             width: 100%;
-            height: 3vh;
-            @include flex();
-            flex-direction: row;
-            padding: 10px 0;
-            margin: 10px 0;
-            position: relative;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 20px;
+            .lable {
+                color: white;
+                font-size: 15px;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+            .inp {
+                width: 90%;
+                height: 6vh;
+                border-radius: 3px;
+                outline: none;
+                border: none;
+                text-align: center;
+            }
+            .inp-bg {
+                width: 90%;
+                @include flex();
+                flex-direction: column;
+                position: relative;
+                .pass {
+                    width: 100%;
+                    height: 39.8px;
+                    margin: 10px auto;
+                    outline: none;
+                    border: none;
+                    border-radius: 4px;
+                    text-align: center;
+                    padding: 3px;
+                }
+                .eye {
+                    @include flex();
+                    position: absolute;
+                    right: 5px;
+                    font-size: 25px;
+                    color: rgb(87, 87, 87);
+
+                }
+            }
+            a {
+                width: 100%;
+                height: 6vh;
+                margin: 0px auto;
+                margin-top: 25px;
+                display: flex;
+                flex-direction: none;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                .btn {
+                    width: 90%;
+                    height: 100%;
+                    border-radius: 3px;
+                    outline: none;
+                    border: none;
+                    color: white;
+                    background: red;
+                }
+            }
         }
-        .eye {
-            position: absolute;
-            bottom: 2px;
-            right: 40px;
-            top: 0;
-            .eye-box {
-                width: 25px;
-                height: 25px;
+        .a-user {
+            width: 100%;
+            height: 4vh;
+            text-align: center;
+            a {
+                color: white;
+                font-size: 13px;
             }
         }
     }
-    .pass-req {
+    .social-btn {
         width: 100%;
-        height: 102px;
-        @include flex();
-        color: white;
-        align-items: flex-start;
-        .list {
-            margin-left: 60px;
-            font-size: 12px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 0;
+        .btn-s {
+            width: 50px;
+            height: 50px;
+            border: none;
+            outline: none;
+            margin: 0 20px;
+            font-size: 19px;
+            color: white;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 50px;
+        }
+        .btn-s:first-child:hover {
+            background-color: red;
+            border: none;
+            transform: scale(1.2);
+            transition: 0.5s ease;
+        }
+        .btn-s:nth-child(2):hover {
+            background-color: darkblue;
+            border: none;
+            transform: scale(1.2);
+            transition: 0.5s ease;
         }
     }
 }
