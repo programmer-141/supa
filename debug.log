@@ -18,3 +18,4 @@
 [1202/044154.576:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [1202/044154.576:ERROR:exception_snapshot_win.cc(99)] thread ID 6800 not found in process
 [1204/041548.039:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1209/005049.136:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

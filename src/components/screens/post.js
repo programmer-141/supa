@@ -1,13 +1,12 @@
 import React from 'react';
 import '../allcss/home.css';
 
-
 function Post() {
     //background image styling
     const postPic = "https://picsum.photos/500/700";
     const bgStyle = {
-        // background: `url("${postPic}")center no-repeat`,
-        // backgroundSize: `100% 100%`,
+        background: `url("${postPic}")center no-repeat`,
+        backgroundSize: `100% 100%`,
         background: `#f3f3f5`,
     };
 
