@@ -12,7 +12,7 @@
     color: var(--text-color);
     overflow-x: hidden;
     padding-bottom: 8vh;
-    .menu-dots {
+    .navbar-p {
         width: 100%;
         height: 60px;
         @include flex();
@@ -20,7 +20,7 @@
         position: relative;
         .profile-name {
             margin-left: 20px;
-            font-size: 20px;
+            font-size: 17px;
         }
         .menu {
             position: absolute;
@@ -40,8 +40,8 @@
         height: 150px;
         @include flex();
         .profile-ring {
-            width: 105px;
-            height: 105px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             // border-top: 3px solid var(--text-color);
             // animation: dp 1.5s linear infinite;
@@ -66,7 +66,7 @@
     }
     .follower-menu {
         width: 100%;
-        height: 100px;
+        height: 85px;
         margin-top: 20px;
         position: relative;
         @include flex();
@@ -77,10 +77,15 @@
             // background: blue;
             @include flex();
             flex-direction: column;
+            position: relative;
         }
-        // .followers{
-        //     // background-color: grey;
-        // }
+        .followers::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            border-left: 1px solid var(--text-color);
+        }
     }
     .follower-menu::before {
         content: "";
@@ -114,7 +119,14 @@
         background-color: transparent;
     }
 }
-
+.fg{
+    width: 100%;
+    @include flex();
+    .f1{
+        font-size: 14px;
+        margin: 5px 5px;
+    }
+}
 @keyframes dp {
     0% {
         transform: rotate(0);
@@ -132,11 +144,17 @@
     .postImage{
         width: 100px;
         height:120px;
-        margin: 10px 5px;
-        background-color: blue;
+        margin: 10px 5px 0 5px;
+        background-color: lightgray;
     }
 }
 
 .MuiBox-root-6{
     padding: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

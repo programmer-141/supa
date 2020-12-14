@@ -15,6 +15,13 @@ a{
     text-decoration: none;
 }
 body{
-    position: relative;
-    background-color: #f3f3f5;
+    display: none;
+}
+
+@media only screen and (max-width:1162px){
+    body{
+        display: block;
+        position: relative;
+        background-color: #f3f3f5;
+    }
 }

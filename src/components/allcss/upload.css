@@ -182,9 +182,9 @@
 
 .preview .preview-img {
   width: 90%;
-  height: 320px;
+  height: 350px;
   margin-top: 33.15px;
-  border-radius: 1px;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +198,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #f3f3ff;
   -webkit-box-shadow: 8px 8px 16px #d6d6e0, -8px -8px 16px #ffffff;
           box-shadow: 8px 8px 16px #d6d6e0, -8px -8px 16px #ffffff;
 }
@@ -206,8 +205,10 @@
 .preview .preview-img img {
   outline: none;
   border: none;
-  width: 100%;
+  width: 70%;
   height: 100%;
+  padding: 10px 0;
+  border-radius: 4px;
 }
 
 .preview .custombtn {
@@ -216,7 +217,7 @@
   border: none;
   outline: none;
   background: transparent;
-  border-radius: 2px;
+  border-radius: 20px;
   color: #000;
   margin: 20px 10px;
   -webkit-box-shadow: 8px 8px 16px #d6d6e0, -8px -8px 16px #ffffff;
@@ -226,5 +227,9 @@
 .preview .custombtn:active {
   -webkit-box-shadow: inset 8px 8px 16px #d6d6e0, inset -8px -8px 16px #ffffff;
           box-shadow: inset 8px 8px 16px #d6d6e0, inset -8px -8px 16px #ffffff;
+}
+
+.PrivateTabIndicator-colorSecondary-3 {
+  background-color: black;
 }
 /*# sourceMappingURL=upload.css.map */
